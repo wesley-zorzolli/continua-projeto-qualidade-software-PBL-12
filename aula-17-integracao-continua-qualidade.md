@@ -33,7 +33,7 @@ continua-projeto-qualidade-software-PBL-12/
 |------|-----------|
 | Título da Issue | Implementar cálculo do valor total do pedido |
 | Objetivo da funcionalidade | Calcular automaticamente a soma dos itens do pedido no LocalEats |
-| Link da Issue | _A PREENCHER: criar Issue no repositório e colar o link aqui_ |
+| Link da Issue | https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/issues/1 |
 
 ## 3. Teste Automatizado
 
@@ -106,6 +106,6 @@ jobs:
 |------|-----------|
 | Título do defeito | Erro no cálculo do valor total |
 | Severidade | Alta |
-| Link da Issue | _A PREENCHER: criar Issue de defeito no repositório e colar o link aqui_ |
+| Link da Issue | https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/issues/2 |
 
 O defeito foi simulado alterando a função `calculate_total` para retornar um valor incorreto (ex.: `sum(items) + 1`). O problema foi identificado pela falha imediata dos testes automatizados ao rodar o pipeline do GitHub Actions. Após reverter a implementação para o cálculo correto (`sum(items)`), os testes voltaram a ser aprovados e o pipeline retornou ao status de sucesso.
