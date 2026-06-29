@@ -21,6 +21,7 @@ continua-projeto-qualidade-software-PBL-12/
 ├── .github/
 │   └── workflows/
 │       └── quality.yml
+├── conftest.py
 ├── order.py
 ├── requirements.txt
 └── aula-17-integracao-continua-qualidade.md
