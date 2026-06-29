@@ -66,7 +66,7 @@ def test_calculate_total_single_item():
 | Nome do workflow | Quality Check |
 | Evento que dispara a execução | push e pull_request |
 | Link para o arquivo do workflow | https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/blob/main/.github/workflows/quality.yml |
-| Link de uma execução do workflow | _A PREENCHER: após o push, abrir a aba "Actions" do repositório e colar o link da execução_ |
+| Link de uma execução do workflow | https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/actions/runs/28380683130 |
 
 ```yaml
 name: Quality Check
