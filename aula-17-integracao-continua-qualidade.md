@@ -66,7 +66,8 @@ def test_calculate_total_single_item():
 | Nome do workflow | Quality Check |
 | Evento que dispara a execução | push e pull_request |
 | Link para o arquivo do workflow | https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/blob/main/.github/workflows/quality.yml |
-| Link de uma execução do workflow | https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/actions/runs/28380683130 |
+| Link de uma execução do workflow (sucesso, após correção) | https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/actions/runs/28482198551 |
+| Link de uma execução do workflow (falha, com defeito proposital) | https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/actions/runs/28482086652 |
 
 ```yaml
 name: Quality Check
@@ -108,4 +109,4 @@ jobs:
 | Severidade | Alta |
 | Link da Issue | https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/issues/2 |
 
-O defeito foi simulado alterando a função `calculate_total` para retornar um valor incorreto (ex.: `sum(items) + 1`). O problema foi identificado pela falha imediata dos testes automatizados ao rodar o pipeline do GitHub Actions. Após reverter a implementação para o cálculo correto (`sum(items)`), os testes voltaram a ser aprovados e o pipeline retornou ao status de sucesso.
+O defeito foi simulado alterando a função `calculate_total` para retornar `sum(items) + 1` (commit [`ab94033`](https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/commit/ab94033c017800cf167a790ed1fa7d46217c48ef)). O problema foi identificado pela falha imediata dos 3 testes automatizados ao rodar o pipeline do GitHub Actions ([execução com falha](https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/actions/runs/28482086652)). A correção foi feita revertendo o cálculo para `sum(items)` no commit [`1f300df`](https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/commit/1f300df), que referenciou `Fixes #2` e fechou automaticamente a Issue de bug; o pipeline voltou ao status de sucesso ([execução corrigida](https://github.com/wesley-zorzolli/continua-projeto-qualidade-software-PBL-12/actions/runs/28482198551)).
