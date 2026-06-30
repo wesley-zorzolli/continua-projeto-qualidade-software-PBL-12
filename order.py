@@ -1,2 +1,3 @@
-def calculate_total(items):
-    return sum(items) + 1  # BUG: soma 1 indevido ao total
+def calculate_total(items: list[float]) -> float:
+    """Calcula e retorna o valor total de uma lista de itens do pedido."""
+    return sum(items)
